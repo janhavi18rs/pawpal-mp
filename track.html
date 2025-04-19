@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stray Dog Tracker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111;
+      font-size: 16px;
+    }
+
+    .get-involved {
+      background-color: #ee6c4d;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .main {
+      display: flex;
+      padding: 50px 60px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .left-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .left-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #ee6c4d;
+      font-weight: bold;
+      border-bottom: 6px solid #ee6c4d4d;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .left-content p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .left-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .left-content li {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .left-content li::before {
+      content: "📍";
+      margin-right: 10px;
+    }
+
+    .right-content {
+      flex: 1;
+      text-align: center;
+      min-width: 300px;
+    }
+
+    .right-content img {
+      width: 100%;
+      max-width: 550px;
+      border-radius: 10px;
+    }
+
+    .home-button {
+      margin-top: 40px;
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .home-button:hover {
+      background-color: #111;
+    }
+
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PawPal</div>
+    <nav>
+      <a href="pawpal home.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">How to Help</a>
+      <a href="#">Dispense Food</a>
+      <a href="#">Stray Dog Tracker</a>
+      <a href="#">Contact Us</a>
+      <a href="#" class="get-involved">Get Involved</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="left-content">
+      <h1>Real-Time Tracking for <span class="highlight">Stray Dog Welfare</span></h1>
+      <p>Our real-time tracking feature provides up-to-the-minute information on the location and status of stray dogs. This allows volunteers and rescuers to respond quickly and effectively to dogs in need, ensuring they receive timely care and support. Join us in making a difference!</p>
+      <ul>
+        <li>Instant Location Updates: Know exactly where stray dogs are located.</li>
+        <li>Health Status Monitoring: Access information on each dog's health.</li>
+        <li>Efficient Rescue Operations: Coordinate rescues with real-time data.</li>
+      </ul>
+      <a href="pawpal home.html" class="home-button">🏠 Back to Home</a>
+    </div>
+    <div class="right-content">
+      <img src="dog_mappic.png" alt="Dog Tracker Map">
+    </div>
+  </section>
+
+</body>
+</html>

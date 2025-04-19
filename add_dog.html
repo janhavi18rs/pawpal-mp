@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog Entry Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .form-container {
+      width: 400px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      max-length: 128;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form action="add_done.html" method="GET">
+      <div class="form-group">
+        <label for="dogPic">Dog Pic (URL or filename):</label>
+        <input type="text" id="dogPic" name="dogPic" maxlength="128">
+      </div>
+      <div class="form-group">
+        <label for="dogId">Dog Identification:</label>
+        <input type="text" id="dogId" name="dogId" maxlength="128">
+      </div>
+      <div class="form-group">
+        <label for="locality">Locality:</label>
+        <input type="text" id="locality" name="locality" maxlength="128">
+      </div>
+      <div class="form-group">
+        <label for="health">Health When Found:</label>
+        <input type="text" id="health" name="health" maxlength="128">
+      </div>
+      <div class="form-group">
+        <label for="dateOfEntry">Date of Entry:</label>
+        <input type="date" id="dateOfEntry" name="dateOfEntry">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
